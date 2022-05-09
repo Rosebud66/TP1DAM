@@ -1,0 +1,13 @@
+.navbarr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarr a{
+    color: white;
+}
+.navbarr a:hover{
+    color: rgb(185, 185, 185);
+}

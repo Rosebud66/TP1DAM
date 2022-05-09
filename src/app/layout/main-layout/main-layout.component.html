@@ -1,12 +1,33 @@
-<div class="container bg-success">
-<app-header></app-header>
-</div>
-<div class="container bg-danger">
-<app-navbar></app-navbar>
-</div>
-<div class="container bg-info">
-<router-outlet></router-outlet>
-</div>
-<div class="container bg-warning">
-<app-footer></app-footer>
+<div class="container-father">
+    
+    <div class="container-header bg-dark">
+    <app-header></app-header>
+    </div>
+    
+    <div class="container-navbar bg-primary">
+    <app-navbar></app-navbar>
+    </div>
+    
+    <div class="container-router-father bg-dark">
+        
+        <div class="container-router-up"></div>
+        
+        <div class="container-router-main d-flex flex-row">
+            <div class="container-router-main-left"></div>
+            
+            <div class="container-router-main-middle rounded bg-light">
+                <router-outlet></router-outlet>
+            </div>
+            
+            <div class="container-router-main-right"></div>
+        </div>
+        
+        <div class="container-router-down"></div>
+
+
+    </div>
+    
+    <div class="container-footer bg-dark">
+    <app-footer></app-footer>
+    </div>
 </div>

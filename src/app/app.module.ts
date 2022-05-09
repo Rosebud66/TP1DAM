@@ -15,24 +15,25 @@ import { SubjectModule } from './subject/subject.module';
 import { AreaModule } from './area/area.module';
 import { ExercisesModule } from './exercises/exercises.module';
 import { ExercisesDetailModule } from './exercises-detail/exercises-detail.module';
+import { SettingsModule } from './settings/settings.module';
 
-
-
-
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: '/login',
     pathMatch: 'full'
-  }
+  },
+  
+
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +49,13 @@ const routes: Routes = [
     SubjectModule,
     AreaModule,
     ExercisesModule,
-    ExercisesDetailModule
+    ExercisesDetailModule,
+
+    SettingsModule,
+
+    BrowserAnimationsModule
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

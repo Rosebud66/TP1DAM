@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExercisesComponent } from './exercises.component';
 import { ExercisesRoutingModule } from './exercises-routing.module';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 
 
@@ -9,7 +10,8 @@ import { ExercisesRoutingModule } from './exercises-routing.module';
   declarations: [ExercisesComponent],
   imports: [
     CommonModule,
-    ExercisesRoutingModule
+    ExercisesRoutingModule,
+    ScrollPanelModule
   ]
 })
 export class ExercisesModule { }

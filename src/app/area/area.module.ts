@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AreaComponent } from './area.component';
 import { AreaRoutingModule } from './area-routing.module';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 
 
@@ -11,7 +12,8 @@ import { AreaRoutingModule } from './area-routing.module';
   declarations: [AreaComponent],
   imports: [
     CommonModule,
-    AreaRoutingModule
+    AreaRoutingModule,
+    ScrollPanelModule
   ]
 })
 export class AreaModule { }

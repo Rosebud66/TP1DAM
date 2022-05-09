@@ -1,2 +1,16 @@
-<p>SUBJECT PAGE</p>
-<a routerLink="/area">MATEMÁTICAS</a>
+<div class="contenedorcito bg-warning d-flex justify-content-center text-center rounded-top">
+    <p class="h1 text-dark">Asignatura</p> 
+  
+ </div>
+
+<div class="contenedor">
+    <p-scrollPanel [style]="{width: '100%', height: '50vh'}" styleClass="custom" class="cont text-center bg-light mt-3 rounded-bottom">
+    <div class="p-3">
+        <div routerLink="/area" routerLinkActive="active" class="btn btn-danger col-9 my-2">Matemáticas</div>
+        <div class="btn btn-primary col-9 my-2">Lengua</div>  
+        <div class="btn btn-success col-9 my-2">biología</div> 
+    </div>
+    </p-scrollPanel>
+</div>
+
+

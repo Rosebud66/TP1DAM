@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PersonalComponent } from './personal.component';
 import { PersonalRoutingModule } from './personal-routing.module';
+import { ChartModule } from 'primeng/chart';
+
 
 
 
@@ -9,7 +11,8 @@ import { PersonalRoutingModule } from './personal-routing.module';
   declarations: [PersonalComponent],
   imports: [
     CommonModule,
-    PersonalRoutingModule
+    ChartModule,
+    PersonalRoutingModule,
   ]
 })
 export class PersonalModule { }
